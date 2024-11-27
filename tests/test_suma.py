@@ -6,19 +6,19 @@ import unittest
 2. Usa pytest para ejecutar las pruebas y utiliza coverage.py para verificar que la cobertura de código sea del 100%."
 """
 
-def add(a, b):
+def suma(a, b):
     return a + b
 
-class TestAdd(unittest.TestCase):
+class TestSuma(unittest.TestCase):
     
-    def test_positive_add(self):
-        self.assertEqual(add(3, 5), 8)
+    def test_positive_suma(self):
+        self.assertEqual(suma(3, 5), 8)
 
-    def test_negative_add(self):
-        self.assertEqual(add(-3, -5), -8)
+    def test_negative_suma(self):
+        self.assertEqual(suma(-3, -5), -8)
 
-    def test_mixed_add(self):
-        self.assertEqual(add(10, -3), 7)
+    def test_mixed_suma(self):
+        self.assertEqual(suma(10, -3), 7)
 
-    def test_zero_add(self):
-        self.assertEqual(add(0, 0), 0)
+    def test_zero_suma(self):
+        self.assertEqual(suma(0, 0), 0)
